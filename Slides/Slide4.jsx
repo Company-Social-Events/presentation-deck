@@ -8,22 +8,15 @@ const Slide4 = () => {
     return (
         <SlideTemplate1>
             <Heading sx = {Styles.HeadingStyle}>Project requirements</Heading>
-
-
             <Box sx = {Styles.MarginTop180}> 
-            
                 <Text sx ={Styles.ParagraphStyle}>
                 Application where to add company events like Christmas party , game nights, Team lunch. 
                 </Text>
                 <Text sx = {Styles.ParagraphStyle}> &nbsp;</Text>
-
-
                 <Text sx = {Styles.ParagraphStyle}>
                 We should have multiple roles, one admin that can manage the events. 
                 </Text>
-                
                 <Text sx = {Styles.ParagraphStyle}> &nbsp;</Text>
-
                 <Text sx = {Styles.ParagraphStyle}>
                 The users that can be notified and see the upcoming events. 
                 </Text>
@@ -34,14 +27,8 @@ const Slide4 = () => {
                 <Text sx = {Styles.ParagraphStyle}>
                 Invitation can be done by user or by group. each user should be identified by email.
                 </Text>
-
-
             </Box>
-
-
-
         </SlideTemplate1>
-    
     );
 
 }

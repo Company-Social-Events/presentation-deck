@@ -10,7 +10,7 @@ const Slide3 = () => {
 
                 <Grid sx={Styles.MentorsGridStyle}>
                     {Mentors.map((mentor, index) => 
-                        <TeamMember key={index} name={mentor.name} image={mentor.img} />
+                        <MentorshipMember key={index} name={mentor.name} image={mentor.img} />
                         )}
                 </Grid>
                 </Flex>
@@ -19,22 +19,29 @@ const Slide3 = () => {
     );
 }
 
-const TeamMember = ({ name,  image }) => {
-    return (
-        <Flex sx={{
+const MentorshipMember = ({ name,  image }) => {
+    const styles = {
+        MentorShipGroup : {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             gap:'20px'
-        }}>
-            <Avatar src={image} sx={{
-                backgroundColor: '#d2dad6',
-                width: '7vw',
-                height: '7vw',
-                padding:'5px',
-                border:'4px solid #4b4b4b'
-            }} />
-            <Text sx={{fontSize:'18px', fontWeight:'bold'}}>{name}</Text>
+        },
+        Avatar : {
+            backgroundColor: '#d2dad6',
+            width: '7vw',
+            height: '7vw',
+            padding:'5px',
+            border:'4px solid #4b4b4b'
+        },
+        MentorName : {fontSize:'18px', fontWeight:'bold'}
+
+    }
+
+    return (
+        <Flex sx={styles.MentorShipGroup}>
+            <Avatar src={image} sx={styles.Avatar} />
+            <Text sx={MentorName}>{styles.name}</Text>
         </Flex>
     );
 }

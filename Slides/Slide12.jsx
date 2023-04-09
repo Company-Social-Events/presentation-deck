@@ -6,11 +6,11 @@ const Slide12 = () => {
             justifyContent: 'center',
             alignItems: 'center'
         }}
-    >
-        <Heading>
-        Proiecte Colective12
-        </Heading>
-    </Flex>
+        >
+            <Heading>
+                Proiecte Colective12
+            </Heading>
+        </Flex>
 
     );
 }
