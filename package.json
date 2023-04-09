@@ -3,8 +3,17 @@
       "mdx-deck": "^4.1.1"
    },
    "scripts": {
-      "start": "mdx-deck deck.mdx",
-      "build": "mdx-deck build deck.mdx",
-      "help": "mdx-deck"
-   }
+      "start": "gatsby develop",
+      "clean": "gatsby clean",
+      "build": "gatsby build --prefix-paths",
+      "serve": "gatsby serve --prefix-paths",
+      "gh-pages": "npx gh-pages -d public"
+   },
+   "dependencies": {
+      "gatsby": "*",
+      "gatsby-plugin-catch-links": "^2.1.2",
+      "gatsby-theme-mdx-deck": "^4.1.0",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6"
+    }
 }
