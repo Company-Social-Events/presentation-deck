@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: '/presentation-deck',
+    pathPrefix: '/',
     plugins: [
       'gatsby-plugin-catch-links',
       {
