@@ -3,8 +3,8 @@
       "mdx-deck": "^4.1.1"
    },
    "scripts": {
-      "start": "mdx-deck deck.mdx",
-      "build": "mdx-deck build deck.mdx",
+      "start": "mdx-deck src/deck.mdx",
+      "build": "mdx-deck build src/deck.mdx",
       "help": "mdx-deck"
    }
 }
