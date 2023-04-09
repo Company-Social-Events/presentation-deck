@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, Grid, Box, Avatar, Flex, Text} from 'theme-ui'
+import { Heading, Grid, Avatar, Flex, Text} from 'theme-ui'
 import { Mentors, SlideTemplate2 } from './index';
 
 const Slide3 = () => {
@@ -12,9 +12,6 @@ const Slide3 = () => {
         gridTemplateRows: 'repeat(2, 1fr)',
         gap: '50px 85px'
     }
-
-   
-        
 
     return (
       <SlideTemplate2  pageNumber={3}>

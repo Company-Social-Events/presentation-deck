@@ -9,7 +9,11 @@ import Mentor5 from "./assets/imgs/person-90.png";
 import Mentor6 from "./assets/imgs/person-90.png";
 import Mentor7 from "./assets/imgs/person-90.png";
 import Mentor8 from "./assets/imgs/person-90.png";
-
+import reactjs from "./assets/imgs/reactjs.png";
+import mongodb from "./assets/imgs/mongodb.png";
+import nextjs from "./assets/imgs/nextjs.png";
+import expressJS from "./assets/imgs/expressJS.png";
+import nodejs from "./assets/imgs/nodejs.png";
 
 export * from "./SlideTemplate1";
 export * from "./SlideTemplate2";
@@ -63,4 +67,12 @@ const Mentors = [
     }
 ];
 
-export {IBMiXLogo, IBMLogo, Mentors };
+const MERNStackImgs = {
+    reactjs,
+    nextjs,
+    nodejs,
+    expressJS,
+    mongodb
+}
+
+export {IBMiXLogo, IBMLogo, Mentors, MERNStackImgs };
