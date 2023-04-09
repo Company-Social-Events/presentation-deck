@@ -113,4 +113,5 @@ export * from "./Slide9";
 export * from "./Slide10";
 export * from "./Slide11";
 export * from "./Slide12";
+export * from "./DashBullet"
 export {IBMiXLogo, IBMLogo, Mentors, MERNStackImgs, Styles };

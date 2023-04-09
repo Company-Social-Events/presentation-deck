@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heading, Text, Image, Flex, Box } from 'theme-ui'
-import { SlideTemplate2, MERNStackImgs, Styles } from './index';
-import styled from "@emotion/styled";
+import { SlideTemplate2, MERNStackImgs, Styles, DashBullet } from './index';
+
 
 const Slide5 = () => {
     return (
@@ -13,11 +13,11 @@ const Slide5 = () => {
                 <Text>The MERN stack is a popular web development stack that consists of four technologies:</Text>
                 <Text>&nbsp;</Text>
                 <Flex sx={Styles.JustifyBetween}>
-                    <ul className='dashed'>
-                        <li style={Styles.ListItemStyle}>MongoDB</li>
-                        <li style={Styles.ListItemStyle}>ExpressJS</li>
-                        <li style={Styles.ListItemStyle}>ReactJS</li>
-                        <li style={Styles.ListItemStyle}>NodeJS</li>
+                    <ul >
+                        <DashBullet style={Styles.ListItemStyle}>MongoDB</DashBullet>
+                        <DashBullet style={Styles.ListItemStyle}>ExpressJS</DashBullet>
+                        <DashBullet style={Styles.ListItemStyle}>ReactJS</DashBullet>
+                        <DashBullet style={Styles.ListItemStyle}>NodeJS</DashBullet>
                     </ul>
                     <Flex sx={{ marginLeft: '32px' }}>
                         <Flex sx={Styles.MernColumn}>
