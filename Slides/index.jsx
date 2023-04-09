@@ -15,22 +15,6 @@ import nextjs from "./assets/imgs/nextjs.png";
 import expressJS from "./assets/imgs/expressJS.png";
 import nodejs from "./assets/imgs/nodejs.png";
 
-export * from "./SlideTemplate1";
-export * from "./SlideTemplate2";
-export * from "./MyTheme";
-export * from "./Slide1";
-export * from "./Slide2";
-export * from "./Slide3";
-export * from "./Slide4";
-export * from "./Slide5";
-export * from "./Slide6";
-export * from "./Slide7";
-export * from "./Slide8";
-export * from "./Slide9";
-export * from "./Slide10";
-export * from "./Slide11";
-export * from "./Slide12";
-
 //don't use real names or pictures because of GDPR?
 const Mentors = [
     {
@@ -75,4 +59,57 @@ const MERNStackImgs = {
     mongodb
 }
 
-export {IBMiXLogo, IBMLogo, Mentors, MERNStackImgs };
+
+const Styles = {
+    centeredFlex:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+    },
+    HeadingStyle:{
+        fontsize: '48px',
+        fontWeight: 'bold',
+    },
+    ParagraphStyle:{
+        fontsize: '32px'
+    },
+    MentorsGridStyle : {
+        gridTemplateColumns: 'repeat(4, 1fr)',
+        gridTemplateRows: 'repeat(2, 1fr)',
+        gap: '50px 85px'
+    },
+    MarginTop180:{ marginTop: '180px' },
+    ListItemStyle: {
+        paddingLeft: '10px',
+    },
+    MarginTop: { marginTop: '110px' },
+    JustifyBetween: { justifyContent: 'space-between' },
+    MernColumn: { flexDirection: 'column', justifyContent: 'flex-end' },
+    Icons: {
+        React: { width: '145px', height: '95px' },
+        MongoDB: { width: '95px', height: '95px', marginBottom: '20px' },
+        ExpressJS: { width: '145px', height: '65px', marginBottom: '45px' },
+        NodeJS: { width: '145px', height: '40px', marginBottom: '60px' },
+        nextjs: { width: '135px', height: '85px' },
+    }
+}
+
+
+
+export * from "./SlideTemplate1";
+export * from "./SlideTemplate2";
+export * from "./MyTheme";
+export * from "./Slide1";
+export * from "./Slide2";
+export * from "./Slide3";
+export * from "./Slide4";
+export * from "./Slide5";
+export * from "./Slide6";
+export * from "./Slide7";
+export * from "./Slide8";
+export * from "./Slide9";
+export * from "./Slide10";
+export * from "./Slide11";
+export * from "./Slide12";
+export {IBMiXLogo, IBMLogo, Mentors, MERNStackImgs, Styles };

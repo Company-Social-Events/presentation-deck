@@ -1,29 +1,21 @@
 import React from 'react';
 import { Heading, Text, Box } from 'theme-ui'
-import { SlideTemplate1 } from './SlideTemplate1';
+import { SlideTemplate1, Styles } from './index';
 
 const Slide2 = () => {
-    const HeadingStyle = {
-        fontsize: '48px',
-        fontWeight: 'bold',
-    };
-    const ParagraphStyle = {
-        fontsize: '32px'
-
-    };
 
 
     return (
         <SlideTemplate1>
-                <Heading sx={HeadingStyle}> About us</Heading>
-                <Box sx={{ marginTop: '180px' }}>
-                    <Text sx={ParagraphStyle}> 
+                <Heading sx={Styles.HeadingStyle}> About us</Heading>
+                <Box sx={Styles.MarginTop180}>
+                    <Text sx={Styles.ParagraphStyle}> 
                         IBM iX is a global digital consulting
                         company that helps clients transform their businesses through
                         innovative digital strategies and solutions.
                     </Text>
-                    <Text sx={ParagraphStyle}>&nbsp;</Text>
-                    <Text sx={ParagraphStyle}>
+                    <Text sx={Styles.ParagraphStyle}>&nbsp;</Text>
+                    <Text sx={Styles.ParagraphStyle}>
                         With a team of over 60,000 professionals
                         in more than 170 countries, IBM iX combines creativity, technology,
                         and industry expertise to deliver exceptional customer experiences

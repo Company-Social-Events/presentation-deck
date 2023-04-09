@@ -1,16 +1,12 @@
 import React from 'react';
 import { Heading, Flex} from 'theme-ui'
-import { SlideTemplate1 } from './SlideTemplate1';
+import { Styles, SlideTemplate1} from './index';
 const Slide1 = () => {
+
+
     return (
         <SlideTemplate1>
-            <Flex sx={{
-                justifyContent: 'center',
-                alignItems: 'center',
-                width: '100%',
-                height: '100%',
-            }}
-            >
+            <Flex sx={Styles.centeredFlex}>
                 <Heading>
                     Proiecte Colective
                 </Heading>

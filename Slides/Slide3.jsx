@@ -1,24 +1,14 @@
 import React from 'react';
 import { Heading, Grid, Avatar, Flex, Text} from 'theme-ui'
-import { Mentors, SlideTemplate2 } from './index';
+import { Mentors, SlideTemplate2, Styles } from './index';
 
 const Slide3 = () => {
-    const HeadingStyle = {
-        fontsize: '48px',
-        fontWeight: 'bold',
-    };
-    const MentorsGridStyle = {
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gridTemplateRows: 'repeat(2, 1fr)',
-        gap: '50px 85px'
-    }
-
     return (
       <SlideTemplate2  pageNumber={3}>
-                <Heading sx={HeadingStyle}> Mentors Team</Heading>
+                <Heading sx={Styles.HeadingStyle}> Mentors Team</Heading>
                 <Flex sx={{justifyContent:'center',marginTop: '50px',}}>
 
-                <Grid sx={MentorsGridStyle}>
+                <Grid sx={Styles.MentorsGridStyle}>
                     {Mentors.map((mentor, index) => 
                         <TeamMember key={index} name={mentor.name} image={mentor.img} />
                         )}
