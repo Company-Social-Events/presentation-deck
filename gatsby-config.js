@@ -1,11 +1,11 @@
 module.exports = {
-    pathPrefix: '/presentation-deck',
+    pathPrefix: '',
     plugins: [
       'gatsby-plugin-catch-links',
       {
         resolve: 'gatsby-theme-mdx-deck',
         options: {
-          basePath: '/presentation-deck/slides',
+          basePath: '/slides',
         },
     },
     {
