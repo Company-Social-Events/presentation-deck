@@ -1,20 +1,21 @@
 import React from 'react';
 import { Heading, Flex} from 'theme-ui'
-import { Footer1 } from './Footer1';
+import { SlideTemplate1 } from './SlideTemplate1';
 const Slide1 = () => {
     return (
-        <>
+        <SlideTemplate1>
             <Flex sx={{
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
+                width: '100%',
+                height: '100%',
             }}
             >
                 <Heading>
                     Proiecte Colective
                 </Heading>
             </Flex>
-            <Footer1 />
-        </>
+        </SlideTemplate1>
     );
 }
 

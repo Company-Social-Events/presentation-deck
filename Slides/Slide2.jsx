@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heading, Text, Box } from 'theme-ui'
-import { Footer1 } from './Footer1';
+import { SlideTemplate1 } from './SlideTemplate1';
+
 const Slide2 = () => {
     const HeadingStyle = {
         fontsize: '48px',
@@ -13,8 +14,7 @@ const Slide2 = () => {
 
 
     return (
-        <>
-            <Box>
+        <SlideTemplate1>
                 <Heading sx={HeadingStyle}> About us</Heading>
                 <Box sx={{ marginTop: '180px' }}>
                     <Text sx={ParagraphStyle}> 
@@ -30,9 +30,7 @@ const Slide2 = () => {
                         and drive business growth.
                     </Text>
                 </Box>
-            </Box>
-            <Footer1 />
-        </>
+        </SlideTemplate1>
 
 
     );

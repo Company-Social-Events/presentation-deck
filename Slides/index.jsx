@@ -11,7 +11,8 @@ import Mentor7 from "./assets/imgs/person-90.png";
 import Mentor8 from "./assets/imgs/person-90.png";
 
 
-export * from "./Layout";
+export * from "./SlideTemplate1";
+export * from "./SlideTemplate2";
 export * from "./MyTheme";
 export * from "./Slide1";
 export * from "./Slide2";
@@ -25,8 +26,6 @@ export * from "./Slide9";
 export * from "./Slide10";
 export * from "./Slide11";
 export * from "./Slide12";
-export * from "./Footer1";
-export * from "./Footer2";
 
 //don't use real names or pictures because of GDPR?
 const Mentors = [

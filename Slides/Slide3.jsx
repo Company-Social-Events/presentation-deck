@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heading, Grid, Box, Avatar, Flex, Text} from 'theme-ui'
-import { Footer2,Mentors } from './index';
+import { Mentors, SlideTemplate2 } from './index';
 
 const Slide3 = () => {
     const HeadingStyle = {
@@ -17,8 +17,7 @@ const Slide3 = () => {
         
 
     return (
-      <>
-            <Box>
+      <SlideTemplate2  pageNumber={3}>
                 <Heading sx={HeadingStyle}> Mentors Team</Heading>
                 <Flex sx={{justifyContent:'center',marginTop: '50px',}}>
 
@@ -28,9 +27,7 @@ const Slide3 = () => {
                         )}
                 </Grid>
                 </Flex>
-            </Box>
-            <Footer2 pageNumber={3}/>
-        </>
+        </SlideTemplate2>
 
     );
 }
