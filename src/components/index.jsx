@@ -1,19 +1,19 @@
 // import images from assets
-import IBMiXLogo from "./assets/imgs/ibm-ix-logo.png";
-import IBMLogo from "./assets/imgs/ibm-logo.svg";
-import Mentor1 from "./assets/imgs/person-90.png";
-import Mentor2 from "./assets/imgs/person-90.png";
-import Mentor3 from "./assets/imgs/person-90.png";
-import Mentor4 from "./assets/imgs/person-90.png";
-import Mentor5 from "./assets/imgs/person-90.png";
-import Mentor6 from "./assets/imgs/person-90.png";
-import Mentor7 from "./assets/imgs/person-90.png";
-import Mentor8 from "./assets/imgs/person-90.png";
-import reactjs from "./assets/imgs/reactjs.png";
-import mongodb from "./assets/imgs/mongodb.png";
-import nextjs from "./assets/imgs/nextjs.png";
-import expressJS from "./assets/imgs/expressJS.png";
-import nodejs from "./assets/imgs/nodejs.png";
+import IBMiXLogo from "../assets/imgs/ibm-ix-logo.png";
+import IBMLogo from "../assets/imgs/ibm-logo.svg";
+import Mentor1 from "../assets/imgs/person-90.png";
+import Mentor2 from "../assets/imgs/person-90.png";
+import Mentor3 from "../assets/imgs/person-90.png";
+import Mentor4 from "../assets/imgs/person-90.png";
+import Mentor5 from "../assets/imgs/person-90.png";
+import Mentor6 from "../assets/imgs/person-90.png";
+import Mentor7 from "../assets/imgs/person-90.png";
+import Mentor8 from "../assets/imgs/person-90.png";
+import reactjs from "../assets/imgs/reactjs.png";
+import mongodb from "../assets/imgs/mongodb.png";
+import nextjs from "../assets/imgs/nextjs.png";
+import expressJS from "../assets/imgs/expressJS.png";
+import nodejs from "../assets/imgs/nodejs.png";
 
 //don't use real names or pictures because of GDPR?
 const Mentors = [
