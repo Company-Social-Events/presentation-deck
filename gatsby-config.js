@@ -5,7 +5,7 @@ module.exports = {
       {
         resolve: 'gatsby-theme-mdx-deck',
         options: {
-          basePath: '/presentation-deck',
+          basePath: '/presentation-deck/slides',
         },
     },
     {
