@@ -1,16 +1,13 @@
 import React from 'react';
-import { Heading, Flex } from 'theme-ui'
+import { Image, Flex } from 'theme-ui'
+import { IBMLogo ,SlideTemplate2, Styles} from './index';
 const Slide12 = () => {
     return (
-        <Flex sx={{
-            justifyContent: 'center',
-            alignItems: 'center'
-        }}
-        >
-            <Heading>
-                Proiecte Colective12
-            </Heading>
+        <SlideTemplate2 pageNumber={12}>
+        <Flex sx={Styles.centeredFlex}>
+            <Image src={IBMLogo} sx={{height:'175px'}} />
         </Flex>
+   </SlideTemplate2>
 
     );
 }

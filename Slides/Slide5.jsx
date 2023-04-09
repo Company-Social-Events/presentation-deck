@@ -1,11 +1,11 @@
 import React from 'react';
 import { Heading, Text, Image, Flex, Box } from 'theme-ui'
 import { SlideTemplate2, MERNStackImgs, Styles } from './index';
-
+import styled from "@emotion/styled";
 
 const Slide5 = () => {
     return (
-        <SlideTemplate2>
+        <SlideTemplate2 pageNumber={5}>
             <Heading>
                 Introduction to the MERN Stack
             </Heading>
@@ -13,7 +13,7 @@ const Slide5 = () => {
                 <Text>The MERN stack is a popular web development stack that consists of four technologies:</Text>
                 <Text>&nbsp;</Text>
                 <Flex sx={Styles.JustifyBetween}>
-                    <ul>
+                    <ul className='dashed'>
                         <li style={Styles.ListItemStyle}>MongoDB</li>
                         <li style={Styles.ListItemStyle}>ExpressJS</li>
                         <li style={Styles.ListItemStyle}>ReactJS</li>

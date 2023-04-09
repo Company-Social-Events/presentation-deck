@@ -4,7 +4,7 @@ import { Link } from 'theme-ui'
 import { Heading, Box, Text } from 'theme-ui'
 const Slide10 = () => {
     return (
-        <SlideTemplate2>
+        <SlideTemplate2 pageNumber={10}>
             <Heading sx={Styles.HeadingStyle}>
                 To Do
             </Heading>

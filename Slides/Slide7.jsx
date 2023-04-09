@@ -3,7 +3,7 @@ import { SlideTemplate2, Styles } from './index';
 import { Heading, Text, Box } from 'theme-ui'
 const Slide7 = () => {
     return (
-        <SlideTemplate2>
+        <SlideTemplate2 pageNumber={7}>
             <Heading sx={Styles.HeadingStyle}>ExpressJS in the MERN Stack</Heading>
             <Box sx={Styles.MarginTop180}>
                 <Text sx={Styles.ParagraphStyle}>

@@ -3,9 +3,16 @@
 
 const MyTheme = {
     googleFont: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap",
-        fonts: {
+    fonts: {
         body: "IBM Plex Sans"
+    },
+    styles: {
+        ul: {
+            "dashed": {
+                listStyleType: 'none'
+            }
+        }
     }
 }
 
-export {  MyTheme }
+export { MyTheme }

@@ -41,7 +41,7 @@ const MentorshipMember = ({ name,  image }) => {
     return (
         <Flex sx={styles.MentorShipGroup}>
             <Avatar src={image} sx={styles.Avatar} />
-            <Text sx={MentorName}>{styles.name}</Text>
+            <Text sx={styles.MentorName}>{name}</Text>
         </Flex>
     );
 }

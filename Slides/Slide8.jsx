@@ -4,7 +4,7 @@ import { Heading, Box, Text } from 'theme-ui'
 const Slide8 = () => {
     return (
 
-        <SlideTemplate2>
+        <SlideTemplate2 pageNumber={8}>
             <Heading sx={Styles.HeadingStyle}>ReactJS in the MERN Stack</Heading>
             <Box sx={Styles.MarginTop180}>
                 <Text sx={Styles.ParagraphStyle}>

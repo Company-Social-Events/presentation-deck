@@ -3,7 +3,7 @@ import { SlideTemplate2, Styles } from './index';
 import { Heading, Box, Text } from 'theme-ui'
 const Slide6 = () => {
   return (
-    <SlideTemplate2>
+    <SlideTemplate2 pageNumber={6}>
       <Heading sx={Styles.HeadingStyle}>
         MongoDB in the MERN Stack
       </Heading>
