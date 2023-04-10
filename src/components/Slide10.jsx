@@ -2,6 +2,19 @@ import React from 'react';
 import { SlideTemplate2, ThemeStyles, DashBullet } from './index';
 import { Heading, Text, Link } from 'theme-ui'
 import { Flex } from '@theme-ui/components';
+
+const HelpLinks = [
+    {name: 'Create GitHub account', url: 'https://github.com/'},
+    {name: 'Install Git bash', url: 'https://git-scm.com/downloads'},
+    {name: 'Install NodeJS', url: 'https://nodejs.org/en/download'},
+    {name: 'Install VSCode', url: 'https://code.visualstudio.com/'}
+]
+
+const Repos = [
+    {name: 'Frontend repository', url: 'https://github.com/adriankarp/mern-frontend-boilerplate'},
+    {name: 'Backend repository', url: 'https://github.com/adriankarp/mern-backend-boilerplate'}
+]
+
 const Slide10 = () => {
     return (
         <SlideTemplate2 pageNumber={10}>
@@ -13,38 +26,22 @@ const Slide10 = () => {
                     There are a couple of things to do until next session:
                 </Text>
                 <ul>
-                    <DashBullet> <Text >
-                        Create GitHub account (  <Link href="#!">https://github.com/</Link>)
-                    </Text></DashBullet>
-                    <DashBullet>
-                        <Text >
-                            Install Git bash (<Link href="#!">https://git-scm.com/downloads</Link>)
-                        </Text>
-                    </DashBullet>
-                    <DashBullet>
-                        <Text >
-                            Install NodeJS(<Link href="#!">https://nodejs.org/en/download</Link>)
-                        </Text>
-                    </DashBullet>
-                    <DashBullet>
-                        <Text >Install VSCode (<Link href="#!">https://code.visualstudio.com/</Link>)</Text>
-                    </DashBullet>
+                    {HelpLinks.map((link) => (
+                        <DashBullet> <Text > {link.name}
+                            (  <Link href={link.url}>{link.url}</Link>)
+                        </Text></DashBullet>
+                    ))}
                     <DashBullet>
                         <Text >Clone & run the boilerplates</Text>
                     </DashBullet>
                 </ul>
                 <Text > &nbsp;</Text>
                 <ul>
-                    <DashBullet>
-                        <Text >
-                            Frontend repository ( <Link href="#!">https://github.com/adriankarp/mern-frontend-boilerplate</Link>)
-                        </Text>
-                    </DashBullet>
-                    <DashBullet>
-                        <Text >
-                            Backend repository(<Link href="#!">https://github.com/adriankarp/mern-backend-boilerplate</Link>)
-                        </Text>
-                    </DashBullet>
+                {Repos.map((link) => (
+                        <DashBullet> <Text > {link.name}
+                            (  <Link href={link.url}>{link.url}</Link>)
+                        </Text></DashBullet>
+                    ))}
                 </ul>
             </Flex>
         </SlideTemplate2>
