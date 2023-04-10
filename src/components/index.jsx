@@ -60,41 +60,6 @@ const MERNStackImgs = {
 }
 
 
-const Styles = {
-    centeredFlex:{
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection:'column',
-        width: '100%',
-        height: '100%',
-    },
-    HeadingStyle:{
-        fontSize: '48px',
-        fontWeight: 'bold',
-    },
-    ParagraphStyle:{
-        fontSize: '32px'
-    },
-    MentorsGridStyle : {
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gridTemplateRows: 'repeat(2, 1fr)',
-        gap: '50px 85px'
-    },
-    MarginTop180:{ marginTop: '180px' },
-    ListItemStyle: {
-        paddingLeft: '10px',
-    },
-    MarginTop: { marginTop: '110px' },
-    JustifyBetween: { justifyContent: 'space-between' },
-    MernColumn: { flexDirection: 'column', justifyContent: 'flex-end' },
-    Icons: {
-        React: { width: '145px', height: '95px' },
-        MongoDB: { width: '95px', height: '95px', marginBottom: '20px' },
-        ExpressJS: { width: '145px', height: '65px', marginBottom: '45px' },
-        NodeJS: { width: '145px', height: '40px', marginBottom: '60px' },
-        nextjs: { width: '135px', height: '85px' },
-    }
-}
 
 
 
@@ -114,4 +79,4 @@ export * from "./Slide10";
 export * from "./Slide11";
 export * from "./Slide12";
 export * from "./DashBullet"
-export {IBMiXLogo, IBMLogo, Mentors, MERNStackImgs, Styles };
+export {IBMiXLogo, IBMLogo, Mentors, MERNStackImgs };

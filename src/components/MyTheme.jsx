@@ -7,12 +7,35 @@ const MyTheme = {
         body: "IBM Plex Sans"
     },
     styles: {
-        ul: {
-            "dashed": {
-                listStyleType: 'none'
-            }
+ 
+    },
+    text :{
+        heading: {
+            fontSize: '48px',
+            fontWeight: 'bold',
         }
     }
 }
 
-export { MyTheme }
+
+
+const ThemeStyles = {
+    CenteredFlex:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection:'column',
+        width: '100%',
+        height: '100%',
+    },
+    ParagraphStyle:{
+        fontSize: '32px'
+    },
+    MarginTop180:{ marginTop: '180px' },
+    ListItemStyle: {
+        paddingLeft: '10px',
+    },
+    MarginTop110: { marginTop: '110px' },
+    JustifyBetween: { justifyContent: 'space-between' },
+}
+
+export { MyTheme, ThemeStyles }

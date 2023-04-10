@@ -1,15 +1,27 @@
 import React from 'react';
 import { Heading, Text, Image, Flex, Box } from 'theme-ui'
-import { SlideTemplate2, MERNStackImgs, Styles, DashBullet } from './index';
+import { SlideTemplate2, MERNStackImgs, ThemeStyles, DashBullet } from './index';
 
+const Styles = {
+    ...ThemeStyles,
+    MernColumn: { flexDirection: 'column', justifyContent: 'flex-end' },
+    Icons: {
+        React: { width: '145px', height: '95px' },
+        MongoDB: { width: '95px', height: '95px', marginBottom: '20px' },
+        ExpressJS: { width: '145px', height: '65px', marginBottom: '45px' },
+        NodeJS: { width: '145px', height: '40px', marginBottom: '60px' },
+        nextjs: { width: '135px', height: '85px' },
+    }
+}
 
 const Slide5 = () => {
+
     return (
         <SlideTemplate2 pageNumber={5}>
             <Heading>
                 Introduction to the MERN Stack
             </Heading>
-            <Box style={Styles.MarginTop}>
+            <Box style={{ ...Styles.MarginTop110, ...Styles.ParagraphStyle }}>
                 <Text>The MERN stack is a popular web development stack that consists of four technologies:</Text>
                 <Text>&nbsp;</Text>
                 <Flex sx={Styles.JustifyBetween}>
@@ -33,9 +45,9 @@ const Slide5 = () => {
                         </Flex>
                     </Flex>
                 </Flex>
-                <Text>&nbsp;</Text>
-                <Text>&nbsp;</Text>
-                <Text>Each component of the MERN stack has a specific role in building web applications.</Text>
+                <Text >&nbsp;</Text>
+                <Text >&nbsp;</Text>
+                <Text >Each component of the MERN stack has a specific role in building web applications.</Text>
             </Box>
 
         </SlideTemplate2>

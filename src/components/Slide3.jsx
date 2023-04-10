@@ -1,11 +1,21 @@
 import React from 'react';
 import { Heading, Grid, Avatar, Flex, Text} from 'theme-ui'
-import { Mentors, SlideTemplate2, Styles } from './index';
+import { Mentors, SlideTemplate2, ThemeStyles } from './index';
+
+const Styles = {
+    ...ThemeStyles,
+    MentorsGridStyle : {
+        gridTemplateColumns: 'repeat(4, 1fr)',
+        gridTemplateRows: 'repeat(2, 1fr)',
+        gap: '50px 85px'
+    }
+}
+
 
 const Slide3 = () => {
     return (
       <SlideTemplate2  pageNumber={3}>
-                <Heading sx={Styles.HeadingStyle}> Mentors Team</Heading>
+                <Heading > Mentors Team</Heading>
                 <Flex sx={{justifyContent:'center',marginTop: '50px',}}>
 
                 <Grid sx={Styles.MentorsGridStyle}>

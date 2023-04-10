@@ -1,11 +1,11 @@
 import React from 'react';
-import { SlideTemplate2, Styles} from './index';
+import { SlideTemplate2, ThemeStyles} from './index';
 import { Text, Flex, Link  } from 'theme-ui'
 
 const Slide11 = () => {
     return (
        <SlideTemplate2  pageNumber={11}>
-            <Flex sx={Styles.centeredFlex}>
+            <Flex sx={{...ThemeStyles.CenteredFlex, ...ThemeStyles.ParagraphStyle}}>
             <Text>Thank you</Text>
             <Text>&nbsp;</Text>
             <Text>For any questions don't hesitate to use our slack channel</Text>
