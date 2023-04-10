@@ -69,11 +69,11 @@ const Styles = {
         height: '100%',
     },
     HeadingStyle:{
-        fontsize: '48px',
+        fontSize: '48px',
         fontWeight: 'bold',
     },
     ParagraphStyle:{
-        fontsize: '32px'
+        fontSize: '32px'
     },
     MentorsGridStyle : {
         gridTemplateColumns: 'repeat(4, 1fr)',
